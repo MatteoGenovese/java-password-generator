@@ -23,33 +23,32 @@ public class PasswordGenerator {
 		
 
 		
-		Scanner in = new Scanner(System.in); //istanzia un oggetto lettore di tipo Scanner
+		Scanner scanner = new Scanner(System.in); //istanzia un oggetto lettore di tipo Scanner
 		
 		System.out.print("nome: ");
-        String nome = in.nextLine(); 
+        String name = scanner.nextLine(); 
 
         
 		System.out.print("cognome: ");
-        String cognome = in.nextLine(); 
+        String surname = scanner.nextLine(); 
 
         
 		System.out.print("colore: ");
-        String colore = in.nextLine(); 
+        String favouriteColor = scanner.nextLine(); 
 
         
 		System.out.print("giorno: ");
-        int giorno = in.nextInt(); 
+        int day = scanner.nextInt(); 
         
 		System.out.print("mese: ");
-        int mese = in.nextInt(); 
+        int month = scanner.nextInt(); 
 
         
 		System.out.print("anno: ");
-        int anno = in.nextInt(); 
+        int year = scanner.nextInt(); 
         
-        int addizioneGiornoMeseAnno = giorno + mese + anno;
-        
-        System.out.println(nome+"-"+cognome+"-"+colore+"-"+Integer.toString(addizioneGiornoMeseAnno));
+        int addDayMonthYear = day + month + year;
+System.out.println(name+"-"+surname+"-"+favouriteColor+"-"+Integer.toString(addDayMonthYear));
 
         
 		
